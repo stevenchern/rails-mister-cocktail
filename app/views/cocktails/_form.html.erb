@@ -1,5 +1,5 @@
 <%= simple_form_for(@cocktail) do |f| %>
-<!--   <% if @cocktail.errors.any? %>
+  <% if @cocktail.errors.any? %>
     <div class="errors-container">
       <ul>
         <% @cocktail.errors.full_messages.each do |message| %>
@@ -7,7 +7,7 @@
         <% end %>
       </ul>
     </div>
-  <% end %> -->
+  <% end %>
 
   <!-- [...] all the fields -->
   <%= simple_form_for @cocktail do |f| %>
