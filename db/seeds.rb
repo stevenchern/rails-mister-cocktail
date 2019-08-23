@@ -15,3 +15,5 @@ ingredients_serialized = open(url).read
 ingredients = JSON.parse(ingredients_serialized)
 
 ingredients['drinks'].each { |ingred| Ingredient.create(name: ingred['strIngredient1']) }
+
+puts "All ingredients created"
